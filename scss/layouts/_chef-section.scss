@@ -1,0 +1,89 @@
+
+.chief-section{
+    &__title {
+            position: relative;
+            margin: 0 auto 24px;
+    @media screen and (min-width: $bp-desktop) {
+        margin: 80px;
+    }
+            &::before {
+                    left: 0;
+            
+                }
+            &::after {
+            
+                    right: 0;
+                }
+
+            &::before,
+            &::after {
+            
+            @media screen and (min-width: $bp-desktop) {
+                
+                    position: absolute;
+                    display: block;
+                    width: 352px;
+                    height: 2px;
+                    background: var(--color-primary-white);
+                    content: '';
+                    bottom: 24px;
+            }
+            }                            
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-wrap: wrap;
+            @media screen and (min-width: $bp-tablet) {
+                flex-direction: row;
+                gap: 40px 30px;
+            }
+        }
+
+        &__item {
+            @media screen and (min-width: $bp-tablet) {
+            flex-basis: calc((100% - 30px) / 2);
+            }
+        }
+
+}
+
+.chef-card {
+    display: flex;
+    gap: 16px;
+    @media screen and (min-width: $bp-desktop) {
+        gap: 30px;
+    }
+    &__photo {
+        width: 140px;
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--color-primary-normal), -16px 16px 0 1px var(--color-secondary-black);
+        @media screen and (min-width: $bp-desktop) {
+            width: 240px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 600;
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 40px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+     @media screen and (min-width: $bp-tablet) {
+        font-size: 18px;
+     }
+    }
+
+}

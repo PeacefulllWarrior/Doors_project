@@ -1,0 +1,64 @@
+.content-section{
+    &__container-div{
+        
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__list{
+        display: flex;
+            flex-wrap: wrap;
+    }
+    &__title {
+    top: 0;
+    left: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+   &__type{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    width: 400px;
+    height: 800px;
+    padding: 24px;
+    color: var(--color-gray);
+    border: 3px solid gray;
+    border-radius: 16px;
+   }
+}
+
+
+
+
+.doors-card {
+    background-color: var(--color-primary-normal);
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    width: 349px;
+    height: 444px;
+    flex-shrink: 0;
+    padding: 24px;
+    color: var(--color-gray);
+    border: 3px solid gray;
+    border-radius: 16px;
+    transition: transform 0.3s;
+
+    
+}

@@ -1,0 +1,67 @@
+.footer {
+    padding: 16px 0;
+    background-size: cover;
+    background: linear-gradient(70deg, var(--color-bl-orange) 72%,  rgb(74, 72, 72) 20%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+}
+
+.footer-icon{
+    width: 150px;
+    height: 150px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.footer-nav,
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+.adress-link {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.adress-link:hover {
+    text-decoration: underline;
+    color: var(--color-gray);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.address-icon {
+    fill: var(--color-gray);
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-light);
+    /*заливка*/
+}
+
+.adress-copyright {
+    color: var(--);
+    font-size: 14px;
+
+}
+
