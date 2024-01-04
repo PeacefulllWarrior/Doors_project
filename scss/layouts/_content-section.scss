@@ -1,11 +1,9 @@
 .content-section{
     &__container-div{
-        
+        padding: 24px;
         display: flex;
         width: 100%;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 40px;
+        
     }
     &__container{
         display: flex;
@@ -13,11 +11,19 @@
     }
     &__list{
         display: flex;
-            flex-wrap: wrap;
-    }
+        flex-wrap: wrap;
+        gap: 0.3%;
+        justify-content: center;
+        //     padding-right: 24px;
+        // flex-direction: row-reverse;
+        // align-self: flex-end;
+        // display: flex;
+        //     flex-wrap: wrap;
+     }
     &__title {
     top: 0;
     left: 0;
+    
     margin-bottom: 16px;
     font-size: 24px;
     font-weight: 600;
@@ -27,12 +33,14 @@
         font-weight: 300;
     }
    &__type{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
     margin: 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     position: relative;
-    width: 400px;
+    width: 800px;
     height: 800px;
     padding: 24px;
     color: var(--color-gray);
