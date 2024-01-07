@@ -1,0 +1,36 @@
+.review-section{
+    
+    &__list {
+        background-color: var(--color-dr-gray);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5%;
+        }
+}
+.review-card {
+    background-color: var(--color-bl-orange);
+    box-shadow: -1px -1px 5px gray;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 270px;
+    height: 220px;
+    flex-shrink: 0;
+    padding: 24px;
+    color: var(--color-gray);
+    border: 3px solid gray;
+    border-radius: 16px;
+    transition: transform 0.3s;
+    &__h{
+        
+        left: 0;
+        top: 0;
+    }
+    &__text{
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
+
+}

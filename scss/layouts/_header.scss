@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-
+    padding: 0 36px;
     &__container {
         display: flex;
         align-items: center;
@@ -17,7 +17,7 @@
         display: flex;
         flex-grow: 1;
         align-items: center;
-        gap: 40px;
+        gap: 50px;
     }
 
     &__icon{
@@ -26,12 +26,15 @@
     }
 
     &__button {
-        display: none;
+        &__image{
+            margin: 0 auto;
 
+        }
+        
         @media screen and (min-width: $bp-tablet) {
             display: block;
-            width: 24px;
-            height: 24px;
+            width: 42px;
+            height: 42px;
             padding: 0px;
             fill: var(--color-bl-orange);
             background-color: transparent;
@@ -44,7 +47,7 @@
 
         @media screen and (min-width: $bp-tablet) {
             display: flex;
-            gap: 64px;
+            gap: 10%;
             flex-grow: 1;
             justify-content: center;
         }

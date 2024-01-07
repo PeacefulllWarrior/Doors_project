@@ -1,7 +1,7 @@
 .footer {
     padding: 16px 0;
     background-size: cover;
-    background: linear-gradient(70deg, var(--color-bl-orange) 72%,  rgb(74, 72, 72) 20%);
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.463) 1%, rgba(248, 248, 248, 0) 99%, rgba(248, 248, 248, 0) 99%), linear-gradient(70deg, var(--color-bl-orange) 72%, rgb(74, 72, 72) 20%);
     background-repeat: no-repeat;
     background-position: center top;
     
@@ -19,28 +19,63 @@
 
 
 
-.footer-nav,
+.footer-nav
+{
+        display: flex;
+        gap: 20px;
+        padding: 20px 20px 0 20px ;
+}
 .footer-address {
     display: flex;
-    flex-basis: 50%;
     gap: 20px;
 }
 
-.footer-logo,
+.footer-logo
+{
+        flex-grow: 1;
+        gap: 20px;
+}
 .footer-menu {
     flex-grow: 1;
     gap: 20px;
+    
 }
 
-.address-list,
-.address-info {
+.address-list
+{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
+
+    }
+.address-info {
+    color: var(--color-bl-orange);
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 0 60px 0  0;
+    justify-content: center;
+    flex-grow: 1;
+    
 }
 .adress-link {
+    
     text-decoration: none;
     color: var(--color-gray);
     font-weight: 600;
     font-size: 20px;
+    &__politics{
+        color: var(--color-bl-orange);
+        text-decoration: none;
+
+    }
+    &__politics:hover{
+        color: var(--color-bl-orange);
+        text-decoration: underline;
+
+    }
 }
 
 .adress-link:hover {

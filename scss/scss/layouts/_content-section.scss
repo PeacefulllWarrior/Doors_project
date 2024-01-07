@@ -1,10 +1,13 @@
 .content-section{
     &__container-div{
-        padding: 24px;
+        padding: 12px;
+        
         display: flex;
         width: 100%;
-        
+        @media screen and (min-width: 450px) {
+            padding: 24px;
     }
+}
     &__container{
         display: flex;
         flex-wrap: wrap;
@@ -35,17 +38,19 @@
    &__type{
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
-    margin: 10px 10px;
+    margin: 3px 3px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     position: relative;
-    width: 800px;
     height: 800px;
     padding: 24px;
     color: var(--color-gray);
     border: 3px solid gray;
     border-radius: 16px;
+    @media screen and (min-width: 450px) {
+            margin: 10px 10px;
+        }
    }
 }
 
@@ -54,13 +59,24 @@
 
 .doors-card {
     background-color: var(--color-primary-normal);
-    margin: 10px 10px;
+    margin: 2px 2px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     position: relative;
-    width: 349px;
-    height: 444px;
+    margin-top: 12px;
+    width: 200px;
+    height: 280px;
+    
+    @media screen and (min-width: 450px) {
+            margin: 10px 10px;
+            width: 200px;
+            height: 320px;
+        }
+    @media screen and (min-width: $bp-tablet) {
+        width: 349px;
+            height: 444px;
+        }
     flex-shrink: 0;
     padding: 24px;
     color: var(--color-gray);
@@ -68,5 +84,23 @@
     border-radius: 16px;
     transition: transform 0.3s;
 
-    
+    &__img{
+    max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        
+    }
+
+
+
+        &__span {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                max-width: 100%;
+            
+            overflow: hidden;
+        }
 }
