@@ -1,5 +1,5 @@
 .review-section{
-    
+    background-color: var(--color-dr-gray);
     &__list {
         background-color: var(--color-dr-gray);
             display: flex;
@@ -24,8 +24,39 @@
     border-radius: 16px;
     transition: transform 0.3s;
     &__h{
+        
         left: 0;
         top: 0;
     }
+    &__text{
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
 
+}
+.review-container
+{
+    display: flex;
+    justify-content: center;
+}
+.container-review{
+    z-index: 2;
+    position: absolute;
+    right: 2px;
+    display: flex;
+    margin: 12px;
+    justify-content: flex-end;
+    border-radius: 8px;
+    background-color: var(--color-gray);
+    
+}
+.add-review{
+    color: var(--color-bl-orange);
+    margin: 4px;
+    text-decoration: none;
+}
+
+
+.add-review:hover {
+    text-decoration: underline;
 }

@@ -1,77 +1,134 @@
 .footer {
-    padding: 16px 0;
+    padding: 6px 0;
+
+    @media screen and (min-width: 450px) {
+        padding: 16px 0;
+    }
+
     background-size: cover;
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.463) 1%, rgba(248, 248, 248, 0) 99%, rgba(248, 248, 248, 0) 99%), linear-gradient(70deg, var(--color-bl-orange) 72%, rgb(74, 72, 72) 20%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.463) 1%, rgba(248, 248, 248, 0) 99%, rgba(248, 248, 248, 0) 99%),
+    linear-gradient(70deg, var(--color-bl-orange) 72%, rgb(74, 72, 72) 20%);
     background-repeat: no-repeat;
     background-position: center top;
-    
+    width: 100%;
 }
 
-.footer-icon{
-    width: 150px;
-    height: 150px;
+.footer-icon {
+    width: 25px;
+    height: 25px;
+
+    @media screen and (min-width: 450px) {
+        width: 55px;
+        height: 55px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .footer-container {
     display: flex;
-    gap: 20px;
-}
 
-
-
-.footer-nav
-{
-        display: flex;
+    @media screen and (min-width: $bp-tablet) {
         gap: 20px;
-        padding: 20px 20px 0 20px ;
+    }
+
+    ;
 }
+
+
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px 10px 0 10px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 20px 20px 0 20px;
+    }
+}
+
 .footer-address {
     display: flex;
     gap: 20px;
 }
 
-.footer-logo
-{
-        flex-grow: 1;
-        gap: 20px;
+.footer-logo {
+    flex-grow: 1;
+    gap: 20px;
 }
+
 .footer-menu {
     flex-grow: 1;
     gap: 20px;
-    
+
 }
 
-.address-list
-{
-    padding: 40px;
+.address-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
-
+    font-weight: 200;
+    font-size: 12px;
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 25px;
     }
+
+    @media screen and (min-width: $bp-desktop) {
+        font-size: 35px;
+    }
+}
+
 .address-info {
     color: var(--color-bl-orange);
     display: flex;
     flex-direction: column;
     text-align: end;
-    padding: 0 60px 0  0;
+    padding: 0 2px 0 0;
+
+    @media screen and (min-width: 450px) {
+        padding: 0 20px 0 0;
+    }
+
     justify-content: center;
     flex-grow: 1;
-    
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 20px;
+        padding: 0 60px 0 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        font-size: 23px;
+    }
 }
+
 .adress-link {
-    
+
     text-decoration: none;
     color: var(--color-gray);
     font-weight: 600;
-    font-size: 20px;
-    &__politics{
+    font-size: 12px;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 25px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        font-size: 35px;
+    }
+
+    &__politics {
         color: var(--color-bl-orange);
         text-decoration: none;
 
     }
-    &__politics:hover{
+
+    &__politics:hover {
         color: var(--color-bl-orange);
         text-decoration: underline;
 
@@ -82,13 +139,22 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.463) 1%, rgba(248, 248, 248,
     text-decoration: underline;
     color: var(--color-gray);
     font-weight: 600;
-    font-size: 20px;
+
 }
 
 .address-icon {
     fill: var(--color-gray);
 }
 
+.address__SVG {
+    fill: var(--color-gray);
+    width: 12px;
+    height: 12px;
+    @media screen and (min-width: $bp-tablet) {
+            width: 40px;
+                height: 40px;
+        }
+}
 .address-icon:hover {
     fill: var(--color-brand-light);
     /*заливка*/

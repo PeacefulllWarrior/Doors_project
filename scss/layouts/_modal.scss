@@ -1,10 +1,12 @@
 .backdrop {
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 20px 0;
+    padding: 20px 10px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,15 +28,33 @@
     height: 100%;
     max-width: 880px;
     max-height: 880px;
-    padding: 128px;
-    background-color: var(--color-primary-white);
+    padding: 24px;
+    @media screen and (min-width: 450px) {
+         padding: 64px;
+    }
+    
+    @media screen and (min-width: $bp-tablet) {
+       padding: 128px;
+    }
+    background-color: var(--color-gray);
+    color: black;
     border-radius: 32px;
     overflow: auto;
-
+    &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+    }
+    &__text{
+        margin-bottom: 40px;
+    }
     &__btn-close {
         position: absolute;
         top: 40px;
         right: 40px;
+        background-color: transparent;
+        border: none;
     }
     &__form-field{
         margin-bottom: 32px;
@@ -43,6 +63,7 @@
     &__button{
         display: block;
         margin: 0 auto 24px ;
+        
     }
 
 

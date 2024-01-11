@@ -2,7 +2,15 @@
     color: var(--color-bl-orange);
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 12px;
+    
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 25px;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 35px;
+        }
 }
 .link:hover {
     color: var(--color-bl-orange);
